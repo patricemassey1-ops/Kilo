@@ -77,12 +77,12 @@ st.sidebar.header("⚙️ Configuration")
 
 # Formater l'affichage des plafonds dans les inputs
 plafond_gc_display = st.sidebar.text_input(
-    "💰 Plafond Grand Club", 
+    "💰 Masse Salariale Grand Club",
     value=f"{DEFAULT_PLAFOND_GRAND_CLUB:,}".replace(",", " ") + " $",
     key="plafond_gc_input"
 )
 plafond_ce_display = st.sidebar.text_input(
-    "🎓 Plafond Club École", 
+    "🎓 Masse Salariale Club École",
     value=f"{DEFAULT_PLAFOND_CLUB_ECOLE:,}".replace(",", " ") + " $",
     key="plafond_ce_input"
 )
@@ -251,10 +251,10 @@ with tab1:
         # Métriques en haut
         col1, col2 = st.columns(2)
         with col1:
-            st.metric("🏒 Plafond Grand Club", format_currency(PLAFOND_GRAND_CLUB))
+            st.metric("🏒 Masse Salariale Grand Club", format_currency(PLAFOND_GRAND_CLUB))
         with col2:
-            st.metric("🎓 Plafond Club École", format_currency(PLAFOND_CLUB_ECOLE))
-        
+            st.metric("🎓 Masse Salariale Club École", format_currency(PLAFOND_CLUB_ECOLE))
+
         st.divider()
         
         # Formatage optimisé avec couleurs
